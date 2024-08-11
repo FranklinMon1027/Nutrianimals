@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../crud-php-pdo-bootstrap-modal-ejemplo-completo/bootstrap/fonts"
+		},
+		{
+			"path": "../crud-php-pdo-bootstrap-modal-ejemplo-completo/bootstrap/css"
+		}
+	],
+	"settings": {}
+}

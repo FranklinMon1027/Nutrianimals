@@ -1,0 +1,97 @@
+* {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    
+}
+
+
+.start{
+    background-color: rgb(38, 255, 0);
+}
+#es{
+    color: white;
+}
+
+#but{
+    width: 300px; /* Ancho del botón */
+    height: 50px; /* Altura del botón */
+    background-color:rgb(38, 255, 0); /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    font-size: 16px; /* Tamaño del texto del botón */
+    border: 10px; /* Borde del botón */
+    border-radius: 5px; /* Radio de la esquina del borde del botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+#but2{
+    width: 300px; /* Ancho del botón */
+    height: 50px; /* Altura del botón */
+    background-color: rgb(38, 255, 0); /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    font-size: 16px; /* Tamaño del texto del botón */
+    border: 10px; /* Borde del botón */
+    border-radius: 5px; /* Radio de la esquina del borde del botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    margin-left: 280px;
+}
+#but3{
+    width: 300px; /* Ancho del botón */
+    height: 50px; /* Altura del botón */
+    background-color: rgb(38, 255, 0); /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    font-size: 16px; /* Tamaño del texto del botón */
+    border: 10px; /* Borde del botón */
+    border-radius: 5px; /* Radio de la esquina del borde del botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    margin-left: 230px;
+}
+
+#co{
+    margin-top: 80px;
+    
+}
+#co2{
+    margin-left: 300px;
+}
+#co3{
+    margin-left: 300px;
+}
+
+#registro{
+    margin-right: 898px;
+    margin-top: 5px;
+}
+
+#bot{
+    color: white;
+    cursor: pointer;
+    background-color:rgb(38, 255, 0);
+    border-radius: 5px;
+    font-size: 16px;
+    width: 200px;
+    height: 50px;
+    margin-right: 100px;
+
+}
+#titulo{
+    margin-left: 160px;
+    margin-top: 250px;
+}
+
+#formulario{
+    margin-left: 800px;
+    margin-bottom: 200px;
+}
+
+#reseñat{
+    margin-left: 1050px;
+    width: 50px;
+}
+
+
+
+
+#p1{
+margin-left: 580px;
+}
