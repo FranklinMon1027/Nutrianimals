@@ -1,0 +1,205 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nutrianimals</title>
+    <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <body class="sb-nav-fixed">
+        <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+            <!-- Navbar Brand-->
+            <a class="navbar-brand ps-3" href="index.html">Nutrianimals Admin</a>
+            <!-- Sidebar Toggle-->
+            <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
+            <!-- Navbar Search-->
+            <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
+                <div class="input-group">
+                    <input class="form-control" type="text" placeholder="Search for..." aria-label="Search for..." aria-describedby="btnNavbarSearch" />
+                    <button class="btn btn-primary" id="btnNavbarSearch" type="button"><i class="fas fa-search"></i></button>
+                </div>
+            </form>
+            
+            <!-- Navbar-->
+            <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#!">opciones</a></li>
+                        <li><a class="dropdown-item" href="#!">Activity Log</a></li>
+                        <li><hr class="dropdown-divider" /></li>
+                        <li><a class="dropdown-item" href="perfil.php">perfil</a></li>
+                </li>
+            </ul>
+        </nav>
+        
+        <div id="layoutSidenav">
+            <div id="layoutSidenav_nav">
+                <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                    <div class="sb-sidenav-menu">
+                        <div class="nav">
+                        
+                            
+                            <div class="sb-sidenav-menu-heading">Paginas</div>
+                            <a class="nav-link" href="index.html">inicio</a>
+                            <a class="nav-link" href="admin/indexx.php">Clientes</a>
+                           <a class="nav-link" href="admin/categorias.php">Categorias</a>
+                            <a class="nav-link" href="admin/subcategorias.php">subcategorias</a>
+                            <a class="nav-link" href="admin/listar.php">medicamentos</a>
+                            <a class="nav-link" href="admin/vacunas.php">vacunas</a>
+                            
+                            <a class="nav-link" href="admin/animales.php">animales</a>
+                            <a class="nav-link" href="admin/alimentos.php">alimentos</a>
+                        
+                            
+                            
+                            
+                            <div class="sb-sidenav-menu-heading">Admin</div>
+                                <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
+                                    <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                                    Inicio seccion
+                                     <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                                </a>
+                             <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                                    <nav class="sb-sidenav-menu-nested nav">
+                                        
+                                        <a class="nav-link" href="login/index.php">cerrar seccion</a>
+                                   
+                                        <a class="nav-link" href="login/forgot_password.php">olvide mi contraseña</a>
+                                    </nav>
+                                    
+                            </div>
+                        </div>
+                        <div class="sb-sidenav-footer">
+                            <div class="small">Logged in as:</div>
+                            Start Bootstrap
+                        </div>
+                    </nav>
+                </div>
+                <div id="layoutSidenav_content">
+                    <main>
+                        
+                                <div class="container-fluid px-4">
+                                    <h1 class="mt-4">administrador</h1>
+                                    <ol class="breadcrumb mb-4">
+                                        <li class="breadcrumb-item active">Dashboard</li>
+                                    </ol>
+                                    <h1>Información</h1>
+                                </div>
+                                
+                                <div class="container-fluid px-4">
+                                    <h1>Panel de Administración de la Página Web</h1>
+                                    <center><h2>¡Bienvenido al panel de administración de nuestra página web!</h2></center>
+                                    <p>
+                                        Como administrador, tienes el poder de gestionar y supervisar todos los aspectos de nuestra página para garantizar una experiencia óptima para nuestros usuarios. Desde aquí, puedes agregar, editar y eliminar contenido, administrar usuarios, analizar estadísticas y mucho más.
+                                    </p>
+                                
+                                    <p>
+                                        Recuerda siempre mantener la información actualizada y relevante para mantener el interés de nuestros visitantes. ¡Tu trabajo es fundamental para el éxito de nuestra página!
+                                    </p>
+                                
+                                    <h2>Nuevas proyecciones:</h2>
+                                
+                                    <ol>
+                                        <li>
+                                            <strong>Mejoras de Seguridad:</strong> Hemos implementado nuevas medidas de seguridad para proteger los datos de nuestros usuarios. Ahora puedes estar seguro de que tus datos están protegidos mientras navegas por nuestra página.
+                                        </li>
+                                        <li>
+                                            <strong>Diseño Responsivo:</strong> Hemos optimizado el diseño de nuestra página para garantizar una experiencia de usuario fluida en todos los dispositivos, desde teléfonos móviles hasta computadoras de escritorio. ¡Disfruta de una navegación sin problemas en cualquier lugar!
+                                        </li>
+                                        <li>
+                                            <strong>Funcionalidades Mejoradas:</strong> Hemos añadido nuevas funcionalidades para mejorar la usabilidad de nuestra página. Ahora puedes disfrutar de características adicionales que hacen que tu experiencia sea aún más enriquecedora.
+                                        </li>
+                                        <li>
+                                            <strong>Actualización de Contenido:</strong> Hemos actualizado el contenido de nuestra página con información fresca y relevante. Descubre las últimas noticias, consejos útiles y mucho más mientras exploras nuestra página.
+                                        </li>
+                                        <li>
+                                            <strong>Optimización de Velocidad:</strong> Hemos optimizado el rendimiento de nuestra página para que cargue más rápido que nunca. Disfruta de tiempos de carga rápidos y una experiencia de navegación fluida en todo momento.
+                                        </li>
+                                    </ol>
+                                
+                                    <p>
+                                        ¡Gracias por ser parte de nuestra comunidad en línea! Estamos comprometidos a proporcionarte la mejor experiencia posible y seguiremos trabajando para mejorar continuamente nuestra página.
+                                    </p>
+                                
+                                    <h2>Información Personal</h2>
+                                    <div>
+                                        <form class="contact-info">
+                                            <input type="text" placeholder="Nombre">
+                                            <input type="tel" placeholder="Teléfono">
+                                            <input type="email" placeholder="Correo electrónico">
+                                            <button>Contactar</button>
+                                        </form>
+                                    </div>
+                                
+                                    <h2>Imágenes</h2>
+                                    <div class="images">
+                                        <img src="imagen1.jpg" alt="Imagen 1">
+                                        <img src="imagen2.jpg" alt="Imagen 2">
+                                        <img src="imagen3.jpg" alt="Imagen 3">
+                                        <img src="imagen4.jpg" alt="Imagen 4">
+                                    </div>
+                                
+                                    <h1>Manual del Administrador</h1>
+                                
+                                    <h2>Funciones del Administrador:</h2>
+                                
+                                    <h3>1. Gestión de Usuarios:</h3>
+                                    <p>El administrador tiene el control total sobre los usuarios registrados en la plataforma. Esto incluye:</p>
+                                    <ul>
+                                        <li>Crear Usuarios: El administrador puede crear nuevas cuentas de usuario para otorgar acceso a la plataforma.</li>
+                                        <li>Editar Usuarios: Puede editar la información de los usuarios, como nombres, correos electrónicos y roles.</li>
+                                        <li>Eliminar Usuarios: Tiene la capacidad de eliminar cuentas de usuario de la plataforma en caso necesario.</li>
+                                    </ul>
+                                
+                                    <h3>2. Gestión de Animales:</h3>
+                                    <p>El administrador es responsable de supervisar y gestionar los registros de los animales en la plataforma. Esto incluye:</p>
+                                    <ul>
+                                        <li>Añadir Animales: Puede agregar nuevos registros de animales a la plataforma, incluyendo información relevante como nombre, especie, edad, etc.</li>
+                                        <li>Editar Animales: Tiene la capacidad de editar la información existente de los animales, como actualizar su estado de salud o modificar su descripción.</li>
+                                        <li>Eliminar Animales: En caso necesario, puede eliminar registros de animales de la plataforma.</li>
+                                    </ul>
+                                
+                                    <h3>3. Supervisión del Estado de la Página:</h3>
+                                    <p>El administrador debe garantizar que la plataforma funcione sin problemas y esté siempre disponible para los usuarios. Esto incluye:</p>
+                                    <ul>
+                                        <li>Monitorizar el Estado del Servidor: Debe supervisar el estado del servidor y asegurarse de que todos los sistemas estén funcionando correctamente.</li>
+                                        <li>Resolver Problemas Técnicos: En caso de problemas técnicos, como errores de servidor o caídas del sistema, debe tomar medidas para solucionarlos lo antes posible.</li>
+                                    </ul>
+                                
+                                    <h3>4. Análisis de Visitas:</h3>
+                                    <p>El administrador también tiene acceso a datos importantes sobre la actividad de los usuarios en la plataforma. Esto incluye:</p>
+                                    <ul>
+                                        <li>Analizar Estadísticas de Visitas: Puede acceder a informes y estadísticas detalladas sobre la actividad de los usuarios, como el número de visitas diarias, la duración de la sesión, etc.</li>
+                                        <li>Utilizar Datos para Mejoras: Utiliza la información recopilada para identificar áreas de mejora en la plataforma y tomar decisiones informadas para su desarrollo futuro.</li>
+                                    </ul>
+                                
+                                    <p>¡Esperamos que este manual te proporcione una comprensión clara de tus responsabilidades como administrador y te ayude a desempeñar tu función de manera efectiva en nuestra plataforma! Si tienes alguna pregunta o necesitas ayuda adicional, no dudes en contactar con el equipo de soporte. ¡Gracias por tu dedicación y compromiso!</p>
+                                </div>
+                                
+                            </ol>
+                            <div class="row">
+</head>
+
+<body>
+    
+
+<header>
+
+
+   
+</div>
+<nav>
+<a href="cerrar_sesion.html" style="float:right">Cerrar Sesión</a>
+</nav>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+        <script src="assets/demo/chart-area-demo.js"></script>
+        <script src="assets/demo/chart-bar-demo.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
+        <script src="js/datatables-simple-demo.js"></script>
+    </body>
+</body>
+
+</html>
